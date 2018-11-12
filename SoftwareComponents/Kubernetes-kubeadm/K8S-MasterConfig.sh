@@ -16,7 +16,7 @@ echo "New PATH = $PATH"
 hostname --ip-address
 
 # Initialize Kubernetes master
-kubeadm init --kubernetes-version=v1.11.0 --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=$(hostname --ip-address) --token-ttl 0  
+kubeadm init --kubernetes-version=v1.12.2 --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=$(hostname --ip-address) --token-ttl 0  
 
 # The kubeadm command will take a few minutes and it will print a 'kubeadm join'
 # command once completed. Make sure to capture and store this 'kubeadm join'
